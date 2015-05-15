@@ -32,9 +32,6 @@
         self.column = 10;
         self.margin = 2;
         self.edge = 10;
-        self.elementWidth = (self.frame.size.width-(self.column-1)*self.margin-self.edge*2)/self.column;
-        self.elementHeight = (self.frame.size.width-(self.row-1)*self.margin-self.edge*2)/self.row;
-        NSLog(@"elementWidth = %f -- elementHeight = %f",self.elementWidth,self.elementHeight);
     }
     return self;
 }
