@@ -10,12 +10,10 @@
 
 @interface EView : UIView
 
-IB_DESIGNABLE
-
-@property (nonatomic) IBInspectable NSInteger row;
-@property (nonatomic) IBInspectable NSInteger column;
-@property (nonatomic) CGFloat margin;
-@property (nonatomic) CGFloat edge;
+@property (nonatomic) NSInteger row;//行
+@property (nonatomic) NSInteger column;//列
+@property (nonatomic) CGFloat margin;//间距
+@property (nonatomic) CGFloat edge;//边距
 
 - (void)start;
 
