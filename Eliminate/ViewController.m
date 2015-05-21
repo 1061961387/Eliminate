@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomCon;
 @property (strong, nonatomic) EView *eView;
 
 @end
@@ -26,8 +27,9 @@
 //    self.eView.edge = 20;
 //    self.eView.margin = 2;
     [self.view addSubview:self.eView];
-    
     [self.eView start];
+    
+    self.bottomCon.constant = (self.view.frame.size.height - self.view.frame.size.width - 100 -49)/2;
 }
 - (IBAction)rePlay:(id)sender {
     [self.eView reload];
