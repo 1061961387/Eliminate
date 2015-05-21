@@ -117,7 +117,7 @@
 {
     [self.removeArray removeAllObjects];
     
-    [self addRelateBtn];
+//    [self addRelateBtn];
     
     self.surplus = 0;
     for (NSMutableArray *array in self.totalArray) {
