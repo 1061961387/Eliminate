@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor=[UIColor greenColor];
     self.eView = [[EView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.width)];
 //    self.eView.column = 12;
 //    self.eView.row = 12;
