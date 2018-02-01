@@ -32,6 +32,7 @@
     self.bottomCon.constant = (self.view.frame.size.height - self.view.frame.size.width - 100 -49)/2;
 }
 - (IBAction)rePlay:(id)sender {
+    
     [self.eView reload];
 }
 
